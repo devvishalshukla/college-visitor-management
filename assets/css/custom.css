@@ -1,0 +1,23 @@
+/* Write your custom CSS here */
+.student-page {
+ height:100%;
+ width:100%;
+ background:url(../images/hostel-room.jpg) no-repeat;
+ background-size:cover
+}
+.signup-page {
+ background:url(../images/hostel-room-night.jpg) no-repeat;
+ background-size:cover
+}
+
+.nav-link[data-toggle].collapsed:before {
+        content: " ▾";
+    }
+
+.nav-link[data-toggle]:not(.collapsed):before {
+        content: " ▴";
+    }
+
+    .highlight-error {
+  border-color: red;
+}

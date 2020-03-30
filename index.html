@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Visitor Managment System</title>
+</head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+        <div class="card card-signin my-5">
+          <div class="card-body">
+            <h5 class="card-title text-center">Sign In</h5>
+            <form action="includes/login.php" method="POST" class="form-signin">
+              <div class="form-label-group">
+                <label for="inputEmail">Email ID / Username</label>
+                <input type="text" name="username" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+                
+              </div>
+              <br>
+              <div class="form-label-group">
+                <label for="inputPassword">Password</label>
+                <input type="password" name="password" id="inputPassword" class="form-control" placeholder="Password" required>
+                
+              </div>
+              <br>
+              <div class="form-group">
+                <label for="exampleFormControlSelect1">Type</label>
+                <select name="user" class="form-control" id="inputPassword" required>
+                        <option value="guard">Guard</option>
+                        <option value="admin">Admin</option>
+                </select>
+              </div>
+              <br>
+              <!-- <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Sign in</button> -->
+              <input type="submit" class="btn btn-lg btn-success btn-block text-uppercase" name="submit" value="Log in">
+              <hr class="my-4">
+
+              <a href="">
+              <button class="btn btn-sm  btn-block text-uppercase" type="submit"><i class="fab fa-google mr-2"></i> Forgot Password</button></a>
+              
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+<!-- JavaScript Files -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</html>
